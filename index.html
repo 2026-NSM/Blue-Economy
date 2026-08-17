@@ -117,17 +117,69 @@ footer small{display:block;margin-top:25px;color:#78999d}
 
 .wave-stat .stat{min-height:74px}
 @media(max-width:600px){.wave-stat{grid-template-columns:1fr 1fr}}
+
+/* Vembanad Dialogues visual refresh */
+body{background:#f7fbfa;overflow-x:hidden}
+nav{box-shadow:0 4px 24px rgba(3,38,51,.06)}
+.hero{min-height:720px;padding:105px 0 110px;background:radial-gradient(circle at 83% 15%,rgba(70,235,220,.28),transparent 24%),radial-gradient(circle at 62% 78%,rgba(19,163,171,.22),transparent 26%),linear-gradient(135deg,#041f2b 0%,#07576a 56%,#078f8e 100%)}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(255,255,255,.10);border-radius:50%;right:-180px;top:70px;box-shadow:0 0 0 70px rgba(255,255,255,.025),0 0 0 140px rgba(255,255,255,.018)}
+.hero-grid{gap:75px}
+.hero h1{font-size:clamp(54px,8vw,96px)}
+.hero-theme{font-size:clamp(20px,2.3vw,28px)!important;line-height:1.28!important;max-width:820px!important}
+.hero-card{padding:32px;border-radius:32px;box-shadow:0 28px 90px rgba(0,0,0,.18)}
+.stat{transition:.25s}
+.stat:hover{transform:translateY(-3px);background:rgba(0,0,0,.2)}
+section{padding:105px 0}
+h2{font-size:clamp(34px,4.6vw,58px)}
+.cards{gap:20px}
+.card{border-radius:24px;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 22px 50px rgba(4,43,58,.1)}
+.themes{background:linear-gradient(180deg,#edf9f7,#f8fcfb)}
+.theme{border-radius:22px;transition:.25s}
+.theme:hover{transform:translateY(-4px)}
+.session{border-radius:24px;transition:.25s}
+.session:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(4,43,58,.1)}
+.naipunnya{position:relative;overflow:hidden;background:radial-gradient(circle at 10% 20%,rgba(34,200,189,.12),transparent 25%),linear-gradient(180deg,#fff,#f5fbfa)}
+.naipunnya-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:start}
+.naipunnya-copy{font-size:17px;color:#4e676d;line-height:1.8}
+.naipunnya-copy p{margin:0 0 18px}
+.naipunnya-badge{display:inline-flex;gap:10px;align-items:center;margin-top:25px;padding:12px 17px;border-radius:999px;background:var(--navy);color:#bdebe7;font-size:13px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+.naipunnya-badge strong{color:white;font-size:18px}
+.naipunnya-facts{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:55px}
+.naipunnya-facts div{padding:22px;border-radius:20px;background:#fff;border:1px solid #dcebea;box-shadow:0 8px 28px rgba(4,43,58,.045)}
+.naipunnya-facts span{display:block;font-size:25px;font-weight:900;color:var(--navy)}
+.naipunnya-facts small{color:var(--muted);font-size:12px}
+.highlight{position:relative;overflow:hidden}
+.contact{background:linear-gradient(135deg,#f6efe2,#fffaf1)}
+.contact-box{box-shadow:0 22px 70px rgba(3,38,51,.1)}
+@media(max-width:900px){.naipunnya-grid{grid-template-columns:1fr;gap:35px}.naipunnya-facts{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){section{padding:75px 0}.hero{min-height:auto;padding:75px 0 90px}.hero:before{width:300px;height:300px;right:-150px}.naipunnya-facts{grid-template-columns:1fr 1fr}}
+
+
+.distinguished{background:#fff;border-top:1px solid #e6f0ef;border-bottom:1px solid #e6f0ef}
+.opening-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:18px;margin-top:34px}
+.opening-card{background:#f7fbfa;border:1px solid #dcebea;border-radius:24px;padding:27px;transition:.25s}
+.opening-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(4,43,58,.08)}
+.opening-card.honour{background:linear-gradient(135deg,#062b3a,#0a6974);color:#fff}
+.opening-card h3{margin:6px 0 8px;font-size:22px;line-height:1.2;color:var(--navy)}
+.opening-card.honour h3{color:#fff}
+.opening-card p{margin:0;color:var(--muted);font-size:14px}
+.opening-card.honour p{color:#d7eeee}
+.opening-label{font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:900;color:var(--blue)}
+.opening-card.honour .opening-label{color:#8fe9e2}
+@media(max-width:900px){.opening-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
-<div class="topbar"><div class="container"><span>VEMBANAD DIALOGUES 2026</span><span>25–26 September 2026 · Cherthala, Kerala · Hybrid Mode</span></div></div>
+<div class="topbar"><div class="container"><span>VEMBANAD DIALOGUES 2026</span><span>25–26 September 2026 · Cherthala, Kerala · Hybrid Symposium</span></div></div>
 
 <nav>
  <div class="container nav-inner">
   <a class="brand logo-brand" href="#home"><img class="logo-img" src="assets/vembanad-dialogues-logo.png" alt="Vembanad Dialogues 2026 logo"><span>Vembanad Dialogues<br><small>Global Symposium · Blue Economy</small></span></a>
   <button class="menu" onclick="document.querySelector('.navlinks').classList.toggle('show')" aria-label="Menu">☰</button>
   <div class="navlinks">
-   <a href="#about">About</a><a href="#themes">Themes</a><a href="#programme">Highlights</a><a href="#papers">Call for Papers</a><a href="#registration">Registration</a>
+   <a href="#about">Symposium</a><a href="#naipunnya">Naipunnya</a><a href="#themes">Themes</a><a href="#programme">Highlights</a><a href="#papers">Call for Papers</a><a href="#registration">Registration</a>
    <a class="btn btn-primary" href="#contact">Join the Dialogue</a>
   </div>
  </div>
@@ -170,6 +222,56 @@ footer small{display:block;margin-top:25px;color:#78999d}
  </div>
 </section>
 
+
+<section class="distinguished" id="opening">
+  <div class="container">
+    <div class="section-kicker">Distinguished Leadership</div>
+    <h2>Opening the dialogue with leadership, scholarship and practice.</h2>
+    <div class="opening-grid">
+      <div class="opening-card honour">
+        <div class="opening-label">Guest of Honour</div>
+        <h3>His Beatitude Mar Raphael Thattil</h3>
+        <p>Major Archbishop</p>
+      </div>
+      <div class="opening-card">
+        <div class="opening-label">Academic Leadership</div>
+        <h3>Prof. (Dr.) Johnson K.M.</h3>
+        <p>Academic Director, Bharata Mata College (Autonomous), Thrikkakara</p>
+      </div>
+      <div class="opening-card">
+        <div class="opening-label">Featured Plenary</div>
+        <h3>Prof. (Dr.) Biju Kumar</h3>
+        <p>Vice Chancellor, KUFOS</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="naipunnya" class="naipunnya">
+<div class="container">
+<div class="naipunnya-grid">
+<div>
+<div class="section-kicker">About Naipunnya</div>
+<h2>Where professionalism meets purpose.</h2>
+<p class="lead">As its name signifies, Naipunnya aims to foster professionalism, discipline, and the holistic development of its students.</p>
+<div class="naipunnya-badge">Established <strong>2003</strong></div>
+</div>
+<div class="naipunnya-copy">
+<p>Naipunnya School of Management, Cherthala, takes a unique approach to professional education, providing a platform for every individual to refine and mould their talents.</p>
+<p>Established in 2003, Naipunnya School of Management, Cherthala, is a project of the Major Archeparchy of Ernakulam-Angamaly. His Beatitude Mar Raphael Thattil, the Major Archbishop of Ernakulam-Angamaly, serves as the Chief Patron, while Mar Joseph Pamplany, the Vicar of the Major Archbishop, is the Co-Patron.</p>
+<p>Affiliated with the University of Kerala, Naipunnya has emerged as a byword for academic and professional excellence. The institution is accredited with an <strong>'A' grade by NAAC</strong>, approved by <strong>AICTE</strong>, and recognized under <strong>Section 2(f) of the UGC Act of 1956</strong>.</p>
+<p>Over the years, Naipunnya has earned numerous national and international awards and accolades.</p>
+</div>
+</div>
+<div class="naipunnya-facts">
+<div><span>2003</span><small>Established</small></div>
+<div><span>A</span><small>NAAC Grade</small></div>
+<div><span>AICTE</span><small>Approved</small></div>
+<div><span>2(f)</span><small>UGC Recognition</small></div>
+<div><span>Kerala</span><small>University Affiliation</small></div>
+</div>
+</div>
+</section>
 <section class="themes" id="themes">
  <div class="container">
   <div class="section-kicker">Research Themes</div><h2>Seven pathways into the Blue Economy.</h2>
@@ -212,7 +314,7 @@ footer small{display:block;margin-top:25px;color:#78999d}
       <article class="session">
         <div class="session-tag">VISION & POLICY</div>
         <h3>Keralam's Blue Economy: Vision, Policy, and Sustainable Development</h3>
-        <p><strong>Dr. P. Shinoj</strong><br>Principal Scientist, FRAEED, ICAR-CMFRI, Kochi</p>
+        <p><strong>Dr. P Shinoj</strong><br>Principal Scientist, FRAEED, ICAR-CMFRI, Kochi</p><p><strong>Dr. Jacob George C</strong><br>Senior Associate Director, Adi Shankara Group of Institutions & Visiting Professor, NIT Calicut</p><p><strong>Prof. (Dr.) Johnson K.M.</strong><br>Academic Director, Bharata Mata College (Autonomous), Thrikkakara</p>
         <p><strong>Dr. Jacob George C</strong><br>Senior Associate Director, Adi Shankara Group of Institutions & Visiting Professor, NIT Calicut</p>
       </article>
 
@@ -227,7 +329,7 @@ footer small{display:block;margin-top:25px;color:#78999d}
         <h3>Positioning Alappuzha as India's Blue Economy Capital</h3>
         <p><strong>Mr. Rupesh Kumar K.</strong><br>CEO, Kerala Responsible Tourism Mission Society (Responsible Tourism)</p>
         <p><strong>Mr. Vinod V.</strong><br>President, All Kerala Houseboat Owners Association</p>
-        <p><strong>Mr. Venugopal G.</strong><br>President, All Kerala Houseboat Owners Federation — Emerging Houseboat Tourism in the Context of Blue Economy</p>
+        <p><strong>Mr. Venugopal G.</strong><br>President, All Kerala Houseboat Owners Federation — Emerging Houseboat Tourism in the Context of Blue Economy</p><p><strong>Mr. M.P. Sivadathan</strong><br>President, Kerala Homestay and Tourism Society (Kerala HATS)</p>
       </article>
 
       <article class="session workshop">
@@ -239,13 +341,13 @@ footer small{display:block;margin-top:25px;color:#78999d}
       <article class="session workshop">
         <div class="session-tag">WORKSHOP II</div>
         <h3>Ayurveda Tourism</h3>
-        <p><strong>Sr. Dr. Anet Cinobey</strong><br>MD</p>
+        <p><strong>Dr. Cinoby Chacko (Sr. Anet Sabs)</strong><br>MD</p>
       </article>
 
       <article class="session">
         <div class="session-tag">FOOD & COASTAL ECONOMIES</div>
         <h3>From Ocean To Plate: Revitalising Indigenous Cuisines for Sustainable Coastal Economies</h3>
-        <p><strong>Mr. Sid Mehta</strong><br>Founder and CEO, Greenworks Inc., Canada</p>
+        <p><strong>Mr. Sid Mehta</strong><br>Founder and CEO, Greenworks Inc., Canada</p><p><strong>Chef Laiju E.R.</strong><br>Culinary Maestro</p>
       </article>
 
       <article class="session">
@@ -258,7 +360,7 @@ footer small{display:block;margin-top:25px;color:#78999d}
       <article class="session">
         <div class="session-tag">VISION 2030</div>
         <h3>Shaping Kerala's Blue Economy Vision 2030</h3>
-        <p><strong>Dr. Aswathy N.</strong><br>Principal Scientist, FRAEED, ICAR-CMFRI, Kochi</p>
+        <p><strong>Dr. Aswathy N.</strong><br>Principal Scientist, FRAEED, ICAR-CMFRI, Kochi</p><p><strong>Rev. Fr. Xavier Kudiyamserry</strong><br>Spokes Person, Diocese of Alleppey</p><p><strong>Mr. Mathew Joseph</strong><br>Co-Founder and COO, Fresh To Home</p><p><strong>Prof. (Dr.) Sam Thomas</strong><br>Director, School of Management Studies, CUSAT</p>
         <p><strong>Rev. Fr. Xavier Kudiyamserry</strong><br>Spokes Person, Diocese of Alleppey</p>
         <p><strong>Mr. Mathew Joseph</strong><br>Co-Founder and COO, Fresh To Home</p>
       </article>
@@ -272,7 +374,7 @@ footer small{display:block;margin-top:25px;color:#78999d}
       <article class="session">
         <div class="session-tag">MARINE INDUSTRIES</div>
         <h3>Marine Industries & Blue Biotechnology</h3>
-        <p><strong>Dr. Radhika Rajasree S.R.</strong><br>Dean, Professor, Faculty of Ocean Science and Technology, KUFOS</p>
+        <p><strong>Dr. Radhika Rajasree S.R.</strong><br>Dean, Professor, Faculty of Ocean Science and Technology, KUFOS</p><p><strong>Dr. Abhilash Sasidharan</strong><br>Assistant Professor, Fish Processing Technology, KUFOS</p><p><strong>Dr. Anvar Ali P H</strong><br>Assistant Professor (Fishery Biology), Department of Fisheries Resource Management, KUFOS</p><p><strong>Dr. Limna Mol V P</strong><br>Assistant Professor, Department of Marine Biosciences, Faculty of Ocean Science and Technology, KUFOS</p>
         <p><strong>Dr. Abhilash Sasidharan</strong><br>Assistant Professor, Fish Processing Technology, KUFOS</p>
       </article>
 
@@ -280,7 +382,10 @@ footer small{display:block;margin-top:25px;color:#78999d}
         <div class="session-tag">CLIMATE & CONSERVATION</div>
         <h3>Climate Action, Conservation & Renewable Energy</h3>
         <p><strong>Dr. Mohamed Hatha</strong><br>Emeritus Professor, Department of Marine Biology, Microbiology and Biochemistry, CUSAT; Fulbright Scholar; American Society of Microbiology (ASM) Country Ambassador, South India; Director, CUSAT-NCPOR Centre for Polar Sciences</p>
-      </article>
+      
+        <p><strong>Dr. Ratheesh Kumar R</strong><br>Senior Scientist, Marine Biodiversity and Environment Management Division (MBEMD), ICAR-CMFRI, Kochi</p>
+        <p><strong>Dr. Miriam Paul Sreeram</strong><br>Principal Scientist, Marine Biodiversity and Environment Management Division (MBEMD), ICAR-CMFRI, Kochi</p>
+</article>
 
       <article class="session">
         <div class="session-tag">EDUCATION & DIGITAL BLUE ECONOMY</div>
@@ -291,7 +396,7 @@ footer small{display:block;margin-top:25px;color:#78999d}
       <article class="session">
         <div class="session-tag">COASTAL AGRICULTURE & CUISINE</div>
         <h3>Coastal Agriculture & Blue Cuisine</h3>
-        <p><strong>Dr. Imelda Joseph</strong><br>Principal Scientist, Head Mariculture Division, ICAR-CMFRI, Kochi</p>
+        <p><strong>Dr. Imelda Joseph</strong><br>Principal Scientist, Head Mariculture Division, ICAR-CMFRI, Kochi</p><p><strong>Dr. Safeena MP</strong><br>Associate Professor, Department of Aquatic Animal Health Management, Faculty of Fisheries Science, KUFOS</p><p><strong>Mr. S. P. Sujith Swaminikarthil</strong><br>Variety Farmer</p><p><strong>Dr. Cinoby Chacko (Sr. Anet Sabs)</strong><br>MD, Mercy Hospital Vaikom</p>
         <p><strong>Dr. Safeena MP</strong><br>Associate Professor, Department of Aquatic Animal Health Management, Faculty of Fisheries Science, KUFOS</p>
       </article>
 
