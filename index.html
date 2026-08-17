@@ -195,6 +195,35 @@ h2{font-size:clamp(34px,4.6vw,58px)}
 .award-card p{color:#d3eded;margin:0;font-size:15px}
 @media(max-width:700px){.award-grid{grid-template-columns:1fr}}
 
+
+.programme-flow{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:38px}
+.programme-item{background:#fff;border:1px solid #dcebea;border-radius:25px;padding:29px;box-shadow:0 9px 30px rgba(4,43,58,.05)}
+.programme-item.keynote{grid-column:1/-1;background:linear-gradient(135deg,#062b3a,#075e6c);color:#fff;border:0}
+.programme-item.keynote h3{color:#fff}
+.programme-item.keynote p{color:#d5eeee}
+.programme-item.panel{background:#f7fbfa}
+.programme-item.global{background:#f4faf9}
+.programme-type{font-size:11px;letter-spacing:.16em;font-weight:900;color:var(--blue);margin-bottom:10px}
+.keynote .programme-type{color:#8fe9e2}
+.programme-item h3{font-size:24px;line-height:1.22;color:var(--navy);margin:0 0 14px}
+.programme-item p{font-size:14px;color:var(--muted);line-height:1.65;margin:7px 0}
+.keynote p{color:#d5eeee}
+.people{margin-top:13px;padding-top:10px;border-top:1px solid #dcebea}
+.people p:first-child{color:var(--navy);font-weight:900}
+.workshop-group{grid-column:1/-1;background:#f6efe2}
+.workshop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.workshop-card{background:#fff;border:1px solid #e4dcca;border-radius:18px;padding:20px}
+.workshop-card h4{font-size:18px;color:var(--navy);margin:0 0 10px;line-height:1.3}
+.workshop-card p{margin:0}
+.section-break{margin:90px 0 35px}
+.detailed-themes{grid-template-columns:repeat(2,1fr)}
+.detailed-themes .theme{padding:27px}
+.detailed-themes .theme p{font-size:14px;color:var(--muted);line-height:1.65;margin:13px 0 0}
+.detailed-themes .theme strong{color:var(--navy)}
+.theme-note{margin-top:25px;padding:22px 25px;border-left:4px solid var(--cyan);background:#eef9f7;border-radius:15px;color:#506a70;font-size:15px;line-height:1.7}
+@media(max-width:900px){.programme-flow{grid-template-columns:1fr}.programme-item.keynote,.workshop-group{grid-column:auto}.workshop-grid{grid-template-columns:1fr 1fr}.detailed-themes{grid-template-columns:1fr}}
+@media(max-width:600px){.workshop-grid{grid-template-columns:1fr}.programme-item{padding:23px}.section-break{margin-top:65px}}
+
 </style>
 </head>
 <body>
@@ -226,7 +255,7 @@ h2{font-size:clamp(34px,4.6vw,58px)}
       <div class="stat"><b>7</b><span>Research themes</span></div>
       <div class="stat"><b>2</b><span>Days of dialogue</span></div>
       <div class="stat"><b>4</b><span>Focused workshops</span></div>
-      <div class="stat"><b>20+</b><span>Resource persons</span></div>
+      <div class="stat"><b>25+</b><span>Resource persons</span></div>
       <div class="stat"><b>1000+</b><span>Participants</span></div>
       <div class="stat"><b>1</b><span>Vision 2030 Declaration</span></div>
     </div>
@@ -276,124 +305,123 @@ h2{font-size:clamp(34px,4.6vw,58px)}
 </div>
 </div>
 </section>
-<section class="themes" id="themes">
- <div class="container">
-  <div class="section-kicker">Research Themes</div><h2>Seven pathways into the Blue Economy.</h2>
-  <p class="lead">Interdisciplinary research, case studies, policy analyses, reviews, posters and scholarly contributions are welcome.</p>
-  <div class="theme-grid">
-   <div class="theme"><div class="num">THEME 01</div><h3>Fisheries, Aquaculture & Coastal Livelihoods</h3><ul><li>Sustainable marine fishing</li><li>Advanced inland fisheries</li><li>Mariculture & seaweed cultivation</li><li>Coastal livelihood diversification</li></ul></div>
-   <div class="theme"><div class="num">THEME 02</div><h3>Blue Tourism, Recreation & Cultural Heritage</h3><ul><li>Beach & backwater tourism</li><li>Marine cruise & wellness tourism</li><li>Eco & cultural tourism</li><li>Maritime heritage & museums</li></ul></div>
-   <div class="theme"><div class="num">THEME 03</div><h3>Marine Industries & Blue Biotechnology</h3><ul><li>Seafood processing</li><li>Value-added marine products</li><li>Marine biotechnology</li><li>Blue pharmaceuticals</li></ul></div>
-   <div class="theme"><div class="num">THEME 04</div><h3>Climate Action, Conservation & Renewable Energy</h3><ul><li>Mangrove restoration</li><li>Wetlands & biodiversity</li><li>Blue carbon markets</li><li>Wind, wave & floating solar</li></ul></div>
-   <div class="theme"><div class="num">THEME 05</div><h3>Education, Skills, Communication & Digital Blue Economy</h3><ul><li>Maritime education</li><li>Blue entrepreneurship</li><li>GIS & remote sensing</li><li>AI for fisheries & Blue Economy</li></ul></div>
-   <div class="theme"><div class="num">THEME 06</div><h3>Coastal Agriculture & Blue Cuisine</h3><ul><li>Integrated coastal agriculture</li><li>Saline-resistant farming</li><li>Commercial aquaponics</li><li>Sustainable blue cuisine</li></ul></div>
-   <div class="theme"><div class="num">THEME 07</div><h3>Blue Finance & Emerging Policy Perspectives</h3><ul><li>Sustainable blue investments</li><li>Blue bonds & ESG financing</li><li>Regional policy dialogue</li><li>Coastal resilience policy</li></ul></div>
-   <div class="theme"><div class="num">OPEN</div><h3>Interdisciplinary Blue Economy Issues</h3><ul><li>Related cross-sector research</li><li>Policy and development interventions</li><li>Emerging innovations</li><li>Community-based approaches</li></ul></div>
-  </div>
- </div>
-</section>
+
 
 <section id="programme">
   <div class="container">
-    <div class="section-kicker">Programme & Featured Dialogues</div>
+    <div class="section-kicker">Programme</div>
     <h2>Ideas, expertise and action across the Blue Economy.</h2>
-    <p class="lead">The symposium brings together academic, policy, industry, community and international perspectives through plenary dialogues, thematic sessions and practical workshops.</p>
+    <p class="lead">A two-day programme bringing together keynote perspectives, plenary sessions, expert talks, panel discussions, focused workshops and thematic research tracks.</p>
 
-    <div class="cards">
-      <div class="card"><h3>Plenary & Featured Dialogues</h3><p>High-level conversations on Kerala's Blue Economy vision, ecosystem resilience, ocean literacy, food systems and sustainable development.</p></div>
-      <div class="card"><h3>Thematic Sessions</h3><p>Focused discussions spanning marine industries, climate action, education and skills, coastal agriculture, blue cuisine, finance and policy.</p></div>
-      <div class="card"><h3>Focused Workshops</h3><p>Two sector-focused workshops on New Gen Farming and Ayurveda Tourism.</p></div>
-      <div class="card"><h3>International Collaboration Programme</h3><p>Connecting perspectives from different nations around the globe, with participation and leadership from representatives of various Ministries and Departments of the Government of Kerala.</p></div><div class="card"><h3>Industry–Academia Interface</h3><p>Connecting research, enterprise, policy, skills, investment and community perspectives for actionable Blue Economy pathways.</p></div>
-      <div class="card"><h3>Research & Knowledge Exchange</h3><p>Technical sessions, scholarly presentations, interdisciplinary perspectives and emerging research on Kerala's blue future.</p></div>
-      <div class="card"><h3>Vision 2030 Dialogue</h3><p>Building strategic perspectives for positioning Alappuzha and Kerala within a sustainable, inclusive and resilient Blue Economy.</p></div>
+    <div class="programme-flow">
+
+      <article class="programme-item keynote">
+        <div class="programme-type">KEYNOTE SESSION</div>
+        <h3>Reimagining the Blue Economy from Ocean Wealth to Sustainable, Inclusive and Resilient Growth</h3>
+        <p><strong>Speaker:</strong> Prof. (Dr.) Biju Kumar, VC, KUFOS</p>
+        <p><strong>Chair:</strong> Prof. (Dr.) Johnson K.M., Academic Director, Bharata Mata College (Autonomous), Thrikkakara</p>
+      </article>
+
+      <article class="programme-item">
+        <div class="programme-type">PLENARY SESSION</div>
+        <h3>Keralam's Blue Economy: Vision, Policy, and Sustainable Development</h3>
+        <p><strong>Resource Person:</strong> Dr. P Shinoj, Principal Scientist, FRAEED, ICAR-CMFRI, Kochi</p>
+        <p><strong>Chair:</strong> Dr. Jacob George C, Sr. Associate Director, Adi Shankara Group of Institutions & Visiting Professor, NIT Calicut</p>
+      </article>
+
+      <article class="programme-item global">
+        <div class="programme-type">EXPERT TALK · GLOBAL PERSPECTIVE</div>
+        <h3>Ecosystem Resilience as the Foundation of a Sustainable Blue Economy</h3>
+        <p><strong>Resource Person:</strong> Prof. (Dr.) Thomas Hahn, Associate Professor, National Resilience Centre, Stockholm University, Sweden</p>
+      </article>
+
+      <article class="programme-item panel">
+        <div class="programme-type">PANEL SESSION</div>
+        <h3>Positioning Alappuzha as India's Blue Economy Capital</h3>
+        <p><strong>Focus:</strong> Tourism, Vembanad Lake, Kumarakom, Houseboat, Homestay</p>
+        <div class="people">
+          <p><strong>Panelists</strong></p>
+          <p>Mr. Rupesh Kumar K., CEO, Kerala Responsible Tourism Mission Society</p>
+          <p>Mr. Vinod V., President, All Kerala Houseboat Owners Association</p>
+          <p>Mr. Venugopal G., President, All Kerala Houseboat Owners Federation</p>
+          <p>Mr. M.P. Sivadathan, President, Kerala Homestay and Tourism Society (Kerala HATS)</p>
+          <p>One Representative from a Leading Hotel and Resort</p>
+          <p><strong>Moderator:</strong> Representative, Tourism Department, Govt. of Kerala</p>
+        </div>
+      </article>
+
+      <article class="programme-item global">
+        <div class="programme-type">EXPERT TALK · GLOBAL PERSPECTIVE</div>
+        <h3>From Ocean To Plate: Revitalising Indigenous Cuisines for Sustainable Coastal Economies</h3>
+        <p><strong>Resource Person:</strong> Mr. Sid Mehta, Founder and CEO, Greenworks Inc., Canada</p>
+      </article>
+
+      <article class="programme-item">
+        <div class="programme-type">PLENARY SESSION</div>
+        <h3>Knowing our Ocean, Shaping our Future: Ocean Literacy as the Foundation of a Sustainable Blue Economy</h3>
+        <p><strong>Resource Person:</strong> Mr. Jackson Peter, Founder & Managing Director, Cool Divers Pvt. Ltd.; Founder & Managing Director, Bond Ocean Safari; Founder & Managing Trustee, Planet Ocean Foundation (A Non-Profit Organization)</p>
+        <p><strong>Chair:</strong> Prof. (Dr.) Paulachan KJ Kaithottungal, Principal and Executive Director of the Naipunnya Institute of Management and Information Technology, Autonomous (NIMIT)</p>
+      </article>
+
+      <article class="programme-item panel">
+        <div class="programme-type">PANEL DISCUSSION</div>
+        <h3>Shaping Kerala's Blue Economy Vision 2030</h3>
+        <p><strong>Focus:</strong> Sustainability and Livelihood, Agriculture, Coir, Sustainable Farming (traditional)</p>
+        <div class="people">
+          <p><strong>Panelists</strong></p>
+          <p>Dr. Aswathy N, Principal Scientist, FRAEEd, ICAR-CMFRI, Kochi</p>
+          <p>Rev. Fr. Xavier Kudiyamserry, Spokes Person, Diocese of Alleppey</p>
+          <p>Mr. Mathew Joseph, Co-Founder and COO, Fresh To Home</p>
+          <p>Representative from Coir Export Business and Coir Board, Alappuzha</p>
+          <p><strong>Moderator:</strong> Prof. (Dr.) Sam Thomas, Director, School of Management Studies, CUSAT</p>
+        </div>
+      </article>
+
+      <div class="workshop-group programme-item">
+        <div class="programme-type">WORKSHOPS</div>
+        <h3>Focused Workshops</h3>
+        <div class="workshop-grid">
+          <div class="workshop-card">
+            <h4>Workshop I: New Gen Farming</h4>
+            <p><strong>Mr. S. P. Sujith Swaminikarthil</strong><br>Variety Farmer & Agricultural Consultant</p>
+          </div>
+          <div class="workshop-card">
+            <h4>Workshop II: Ayurveda Tourism</h4>
+            <p><strong>Dr. Cinoby Chacko (Sr. Anet Sabs)</strong><br>MD, Mercy Hospital Vaikom</p>
+          </div>
+          <div class="workshop-card">
+            <h4>Workshop III: Kuttanad Ethnic Cuisine Heritage</h4>
+            <p><strong>Chef Laiju E.R.</strong><br>Culinary Maestro</p>
+          </div>
+        </div>
+      </div>
+
+      <article class="programme-item global">
+        <div class="programme-type">EXPERT TALK · GLOBAL PERSPECTIVE</div>
+        <h3>Sea of Deception and Food Safety & Fraud</h3>
+        <p><strong>Resource Person:</strong> Prof. Roy D. Palmer, CEO, Seafood Consumers Association Ltd (ACNC), Australia</p>
+      </article>
+
     </div>
 
-    <div class="session-list">
-      <article class="session">
-        <h3>Opportunities • Innovation • Sustainable Development</h3>
-        <p><strong>Prof. (Dr.) Biju Kumar</strong><br>Vice Chancellor, Kerala University of Fisheries and Ocean Studies (KUFOS)</p>
-      </article>
+    <div class="section-break">
+      <div class="section-kicker">Thematic Research Tracks</div>
+      <h2>Seven pathways into the Blue Economy.</h2>
+      <p class="lead">The seven themes below are the primary focus of the symposium. Chairs and co-chairs are part of the programme structure and are intentionally not repeated within the theme descriptions.</p>
+    </div>
 
-      <article class="session">
-        <h3>Keralam's Blue Economy: Vision, Policy, and Sustainable Development</h3>
-        <p><strong>Dr. P Shinoj</strong><br>Principal Scientist, FRAEED, ICAR-CMFRI, Kochi</p><p><strong>Dr. Jacob George C</strong><br>Senior Associate Director, Adi Shankara Group of Institutions & Visiting Professor, NIT Calicut</p><p><strong>Prof. (Dr.) Johnson K.M.</strong><br>Academic Director, Bharata Mata College (Autonomous), Thrikkakara</p>
-        <p><strong>Dr. Jacob George C</strong><br>Senior Associate Director, Adi Shankara Group of Institutions & Visiting Professor, NIT Calicut</p>
-      </article>
+    <div class="theme-grid detailed-themes">
+      <div class="theme"><div class="num">THEME 01</div><h3>Fisheries, Aquaculture & Coastal Livelihoods</h3><p><strong>Sub-themes:</strong> Sustainable Marine Fishing, Advanced Inland Fisheries, Mariculture Innovation, Seaweed Cultivation, Coastal Livelihood Diversification, Women Entrepreneurs in Fisheries, Fisher Welfare and Safety.</p></div>
+      <div class="theme"><div class="num">THEME 02</div><h3>Blue Tourism, Recreation & Cultural Heritage</h3><p><strong>Sub-themes:</strong> Sustainable Beach & Backwater Tourism, Marine Cruise & Wellness Tourism, Eco and Cultural Tourism, Maritime Heritage and Ancient Trade, Maritime Museums, Coastal History.</p></div>
+      <div class="theme"><div class="num">THEME 03</div><h3>Marine Industries & Blue Biotechnology</h3><p><strong>Sub-themes:</strong> Advanced Seafood Processing, Value-added Marine Products, Marine Biotechnology Applications, Blue Pharmaceuticals, Sea-based Nutraceuticals, Bioactive Marine Compounds.</p></div>
+      <div class="theme"><div class="num">THEME 04</div><h3>Climate Action, Conservation & Renewable Energy</h3><p><strong>Sub-themes:</strong> Mangrove Restoration, Wetlands Protection, Marine Biodiversity, Blue Carbon Markets, Offshore Wind & Wave Energy, Floating Solar Power, Marine Plastic Recycling.</p></div>
+      <div class="theme"><div class="num">THEME 05</div><h3>Education, Skills, Communication & Digital Blue Economy</h3><p><strong>Sub-themes:</strong> Blue Economy English, English as Economic Infrastructure, Maritime Communication, Specialised Maritime Education, Blue Entrepreneurship Training, Marine GIS & Remote Sensing, Oceanographic Sciences, AI applications in Fisheries, AI for Blue economy, IT for conservation and sustainability, Digital Humanities.</p></div>
+      <div class="theme"><div class="num">THEME 06</div><h3>Coastal Agriculture & Blue Cuisine</h3><p><strong>Sub-themes:</strong> Integrated Coastal Agriculture, Saline-resistant Farming, Commercial Aquaponics, Coastal Ethnic Culinary Traditions, Sustainable Blue Cuisine.</p></div>
+      <div class="theme"><div class="num">THEME 07</div><h3>Blue Finance & Emerging Policy Perspectives</h3><p><strong>Sub-themes:</strong> Sustainable Blue Investments, Blue Bonds & ESG Financing, Interdisciplinary Policy Research, Regional Policy Dialogue, Blue Innovation Ecosystems, Coastal Resilience Policy.</p></div>
+    </div>
 
-      <article class="session">
-        <h3>Ecosystem Resilience as the Foundation of a Sustainable Blue Economy</h3>
-        <p><strong>Prof. (Dr.) Thomas Hahn</strong><br>Associate Professor, National Resilience Centre, Stockholm University, Sweden</p>
-      </article>
-
-      <article class="session">
-        <h3>Positioning Alappuzha as India's Blue Economy Capital</h3>
-        <p><strong>Mr. Rupesh Kumar K.</strong><br>CEO, Kerala Responsible Tourism Mission Society</p>
-        <p><strong>Mr. Vinod V.</strong><br>President, All Kerala Houseboat Owners Association</p>
-        <p><strong>Mr. Venugopal G.</strong><br>President, All Kerala Houseboat Owners Federation</p><p><strong>Mr. M.P. Sivadathan</strong><br>President, Kerala Homestay and Tourism Society (Kerala HATS)</p>
-      </article>
-
-      <article class="session">
-        <h3>New Gen Farming</h3><p><strong>Mr. S. P. Sujith Swaminikarthil</strong><br>Variety Farmer, Influencer & Agricultural Consultant</p>
-        
-      </article>
-
-      <article class="session">
-        <h3>Ayurveda Tourism</h3>
-        <p><strong>Dr. Cinoby Chacko (Sr. Anet Sabs)</strong><br>MD</p>
-      </article>
-
-      <article class="session">
-        <h3>From Ocean To Plate: Revitalising Indigenous Cuisines for Sustainable Coastal Economies</h3>
-        <p><strong>Mr. Sid Mehta</strong><br>Founder and CEO, Greenworks Inc., Canada</p><p><strong>Chef Laiju E.R.</strong><br>Culinary Maestro</p>
-      </article>
-
-      <article class="session">
-        <h3>Knowing our Ocean, Shaping our Future: Ocean Literacy as the Foundation of a Sustainable Blue Economy</h3>
-        <p><strong>Mr. Jackson Peter</strong><br>Founder & Managing Director, Cool Divers Pvt. Ltd.; Founder & Managing Director, Bond Ocean Safari; Founder & Managing Trustee, Planet Ocean Foundation</p>
-        <p><strong>Prof. (Dr.) Paulachan KJ Kaithottungal</strong><br>Principal and Executive Director, Naipunnya Institute of Management and Information Technology, Autonomous (NIMIT)</p>
-      </article>
-
-      <article class="session">
-        <h3>Shaping Kerala's Blue Economy Vision 2030</h3>
-        <p><strong>Dr. Aswathy N.</strong><br>Principal Scientist, FRAEED, ICAR-CMFRI, Kochi</p><p><strong>Rev. Fr. Xavier Kudiyamserry</strong><br>Spokes Person, Diocese of Alleppey</p><p><strong>Mr. Mathew Joseph</strong><br>Co-Founder and COO, Fresh To Home</p><p><strong>Prof. (Dr.) Sam Thomas</strong><br>Director, School of Management Studies, CUSAT</p>
-        <p><strong>Rev. Fr. Xavier Kudiyamserry</strong><br>Spokes Person, Diocese of Alleppey</p>
-        <p><strong>Mr. Mathew Joseph</strong><br>Co-Founder and COO, Fresh To Home</p>
-      </article>
-
-      <article class="session">
-        <h3>Sea of Deception; Food Safety & Fraud</h3>
-        <p><strong>Prof. Roy D. Palmer</strong><br>CEO, Seafood Consumers Association Ltd (ACNC), Australia</p>
-      </article>
-
-      <article class="session">
-        <h3>Marine Industries & Blue Biotechnology</h3>
-        <p><strong>Dr. Radhika Rajasree S.R.</strong><br>Dean, Professor, Faculty of Ocean Science and Technology, KUFOS</p><p><strong>Dr. Abhilash Sasidharan</strong><br>Assistant Professor, Fish Processing Technology, KUFOS</p><p><strong>Dr. Anvar Ali P H</strong><br>Assistant Professor (Fishery Biology), Department of Fisheries Resource Management, KUFOS</p><p><strong>Dr. Limna Mol V P</strong><br>Assistant Professor, Department of Marine Biosciences, Faculty of Ocean Science and Technology, KUFOS</p>
-        <p><strong>Dr. Abhilash Sasidharan</strong><br>Assistant Professor, Fish Processing Technology, KUFOS</p>
-      </article>
-
-      <article class="session">
-        <h3>Climate Action, Conservation & Renewable Energy</h3>
-        <p><strong>Dr. Mohamed Hatha</strong><br>Emeritus Professor, Department of Marine Biology, Microbiology and Biochemistry, CUSAT; Fulbright Scholar; American Society of Microbiology (ASM) Country Ambassador, South India; Director, CUSAT-NCPOR Centre for Polar Sciences</p>
-      
-        <p><strong>Dr. Ratheesh Kumar R</strong><br>Senior Scientist, Marine Biodiversity and Environment Management Division (MBEMD), ICAR-CMFRI, Kochi</p>
-        <p><strong>Dr. Miriam Paul Sreeram</strong><br>Principal Scientist, Marine Biodiversity and Environment Management Division (MBEMD), ICAR-CMFRI, Kochi</p>
-</article>
-
-      <article class="session">
-        <h3>Education, Skills, Communication & Digital Blue Economy</h3>
-        <p><strong>Prof. (Dr.) Girish Gopinath</strong><br>Professor & Head, Department of Remote Sensing and GIS, KUFOS</p>
-      </article>
-
-      <article class="session">
-        <h3>Coastal Agriculture & Blue Cuisine</h3>
-        <p><strong>Dr. Imelda Joseph</strong><br>Principal Scientist, Head Mariculture Division, ICAR-CMFRI, Kochi</p><p><strong>Dr. Safeena MP</strong><br>Associate Professor, Department of Aquatic Animal Health Management, Faculty of Fisheries Science, KUFOS</p>
-        <p><strong>Dr. Safeena MP</strong><br>Associate Professor, Department of Aquatic Animal Health Management, Faculty of Fisheries Science, KUFOS</p>
-      </article>
-
-      <article class="session">
-        <h3>Blue Finance & Emerging Policy Perspectives</h3>
-        <p><strong>Dr. Afsal E.M.</strong><br>Associate Professor, School of Management and Entrepreneurship, KUFOS</p>
-      </article>
+    <div class="theme-note">
+      <strong>Open & Interdisciplinary Submissions:</strong> While the above themes are our primary focus, we welcome submissions on related topics that align with the conference's overall objectives. We encourage innovative, interdisciplinary research that advances sustainable Blue Economy knowledge and practice.
     </div>
   </div>
 </section>
