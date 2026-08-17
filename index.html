@@ -98,6 +98,25 @@ footer small{display:block;margin-top:25px;color:#78999d}
  .cards,.speakers,.theme-grid,.timeline,.checks{grid-template-columns:1fr}
  section{padding:65px 0}h1{font-size:52px}
 }
+
+.hero-theme{font-size:21px!important;font-weight:700;line-height:1.35;max-width:850px!important;color:#e9ffff!important}
+.session-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:38px}
+.session{background:#fff;border:1px solid #dceceb;border-radius:20px;padding:25px;box-shadow:0 8px 28px rgba(4,43,58,.06)}
+.session.featured{grid-column:1/-1;background:linear-gradient(135deg,#eef9f7,#fff);border-left:5px solid var(--cyan)}
+.session.workshop{background:var(--sand);border-left:5px solid var(--blue)}
+.session-tag{font-size:11px;letter-spacing:.14em;font-weight:900;color:var(--blue);margin-bottom:9px}
+.session h3{font-size:21px;line-height:1.25;color:var(--navy);margin:0 0 14px}
+.session p{font-size:14px;color:var(--muted);margin:8px 0 0}
+.session p strong{color:var(--navy)}
+@media(max-width:900px){.session-list{grid-template-columns:1fr}}
+
+.secretariat-person{padding:14px 0;border-bottom:1px solid #e4eeee;margin-bottom:2px}
+.secretariat-person strong{display:block;color:var(--navy);font-size:15px}
+.secretariat-person span{display:block;color:var(--muted);font-size:13px;margin:2px 0 5px}
+.secretariat-person a{display:inline-block;color:var(--blue);font-size:13px;margin-right:12px}
+
+.wave-stat .stat{min-height:74px}
+@media(max-width:600px){.wave-stat{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -108,7 +127,7 @@ footer small{display:block;margin-top:25px;color:#78999d}
   <a class="brand logo-brand" href="#home"><img class="logo-img" src="assets/vembanad-dialogues-logo.png" alt="Vembanad Dialogues 2026 logo"><span>Vembanad Dialogues<br><small>Global Symposium · Blue Economy</small></span></a>
   <button class="menu" onclick="document.querySelector('.navlinks').classList.toggle('show')" aria-label="Menu">☰</button>
   <div class="navlinks">
-   <a href="#about">About</a><a href="#themes">Themes</a><a href="#programme">Highlights</a><a href="#papers">Call for Papers</a><a href="#speakers">Speakers</a><a href="#registration">Registration</a>
+   <a href="#about">About</a><a href="#themes">Themes</a><a href="#programme">Highlights</a><a href="#papers">Call for Papers</a><a href="#registration">Registration</a>
    <a class="btn btn-primary" href="#contact">Join the Dialogue</a>
   </div>
  </div>
@@ -119,7 +138,7 @@ footer small{display:block;margin-top:25px;color:#78999d}
   <div>
    <img src="assets/vembanad-dialogues-logo.png" alt="Vembanad Dialogues logo" style="width:145px;max-width:45%;margin-bottom:8px;display:block;"><div class="eyebrow">Global Symposium on Keralam’s Blue Economy</div>
    <h1>Vembanad<br><em>Dialogues</em> 2026</h1>
-   <p>Opportunities · Innovation · Sustainable Development</p>
+   <p class="hero-theme">Reimagining the Blue Economy from Ocean Wealth to Sustainable, Inclusive and Resilient Growth</p>
    <div class="hero-meta">
     <span class="pill">25–26 September 2026</span><span class="pill">Naipunnya School of Management</span><span class="pill">Cherthala, Alappuzha, Kerala</span><span class="pill">In-person & Online</span>
    </div>
@@ -127,7 +146,14 @@ footer small{display:block;margin-top:25px;color:#78999d}
   </div>
   <aside class="hero-card">
    <small>Central Vision</small><strong>From knowledge to policy, innovation to action.</strong>
-   <div class="wave-stat"><div class="stat"><b>7</b><span>Research themes</span></div><div class="stat"><b>2</b><span>Days of dialogue</span></div><div class="stat"><b>4</b><span>Blue Economy workshops</span></div><div class="stat"><b>1</b><span>Vision 2030 Declaration</span></div></div>
+   <div class="wave-stat">
+      <div class="stat"><b>7</b><span>Research themes</span></div>
+      <div class="stat"><b>2</b><span>Days of dialogue</span></div>
+      <div class="stat"><b>4</b><span>Focused workshops</span></div>
+      <div class="stat"><b>20+</b><span>Resource persons</span></div>
+      <div class="stat"><b>1000+</b><span>Expected participants</span></div>
+      <div class="stat"><b>1</b><span>Vision 2030 Declaration</span></div>
+    </div>
   </aside>
  </div>
 </header>
@@ -162,55 +188,130 @@ footer small{display:block;margin-top:25px;color:#78999d}
 </section>
 
 <section id="programme">
- <div class="container">
-  <div class="section-kicker">Two Days of Dialogue, Research & Action</div><h2>A platform built for exchange.</h2>
-  <div class="cards">
-   <div class="card"><h3>Plenary Sessions</h3><p>Three plenary sessions bringing diverse perspectives into the Blue Economy conversation.</p></div>
-   <div class="card"><h3>Panel Discussions</h3><p>Two panel discussions connecting expertise, experience, policy and practice.</p></div>
-   <div class="card"><h3>Blue Economy Workshops</h3><p>Four workshops focused on practical learning, innovation and sectoral engagement.</p></div>
-   <div class="card"><h3>Technical Sessions</h3><p>Two parallel technical sessions for research presentations and scholarly exchange.</p></div>
-   <div class="card"><h3>Policy Dialogue</h3><p>A focused space for evidence-based policy perspectives and strategic recommendations.</p></div>
-   <div class="card"><h3>Industry–Academia Interface</h3><p>Connections for research collaboration, entrepreneurship, skills and investment.</p></div>
-   <div class="card"><h3>Blue Economy Exhibition</h3><p>Showcasing enterprises, sustainable products, technologies, tourism initiatives and community innovations.</p></div>
-   <div class="card"><h3>Research Posters & Awards</h3><p>Interactive poster presentations and Best Paper Awards to celebrate emerging work.</p></div>
-   <div class="card"><h3>Vision 2030 Declaration</h3><p>A proposed consolidated statement of strategic recommendations emerging from the symposium.</p></div>
+  <div class="container">
+    <div class="section-kicker">Programme & Featured Dialogues</div>
+    <h2>Ideas, expertise and action across the Blue Economy.</h2>
+    <p class="lead">The symposium brings together academic, policy, industry, community and international perspectives through plenary dialogues, thematic sessions and practical workshops.</p>
+
+    <div class="cards">
+      <div class="card"><h3>Plenary & Featured Dialogues</h3><p>High-level conversations on Kerala's Blue Economy vision, ecosystem resilience, ocean literacy, food systems and sustainable development.</p></div>
+      <div class="card"><h3>Thematic Sessions</h3><p>Focused discussions spanning marine industries, climate action, education and skills, coastal agriculture, blue cuisine, finance and policy.</p></div>
+      <div class="card"><h3>Focused Workshops</h3><p>Two sector-focused workshops on New Gen Farming and Ayurveda Tourism.</p></div>
+      <div class="card"><h3>Industry–Academia Interface</h3><p>Connecting research, enterprise, policy, skills, investment and community perspectives for actionable Blue Economy pathways.</p></div>
+      <div class="card"><h3>Research & Knowledge Exchange</h3><p>Technical sessions, scholarly presentations, interdisciplinary perspectives and emerging research on Kerala's blue future.</p></div>
+      <div class="card"><h3>Vision 2030 Dialogue</h3><p>Building strategic perspectives for positioning Alappuzha and Kerala within a sustainable, inclusive and resilient Blue Economy.</p></div>
+    </div>
+
+    <div class="session-list">
+      <article class="session featured">
+        <div class="session-tag">FEATURED DIALOGUE</div>
+        <h3>Reimagining the Blue Economy from Ocean Wealth to Sustainable, Inclusive and Resilient Growth</h3>
+        <p><strong>Prof. (Dr.) Biju Kumar</strong><br>Vice Chancellor, Kerala University of Fisheries and Ocean Studies (KUFOS)</p>
+      </article>
+
+      <article class="session">
+        <div class="session-tag">VISION & POLICY</div>
+        <h3>Keralam's Blue Economy: Vision, Policy, and Sustainable Development</h3>
+        <p><strong>Dr. P. Shinoj</strong><br>Principal Scientist, FRAEED, ICAR-CMFRI, Kochi</p>
+        <p><strong>Dr. Jacob George C</strong><br>Senior Associate Director, Adi Shankara Group of Institutions & Visiting Professor, NIT Calicut</p>
+      </article>
+
+      <article class="session">
+        <div class="session-tag">RESILIENCE</div>
+        <h3>Ecosystem Resilience as the Foundation of a Sustainable Blue Economy</h3>
+        <p><strong>Prof. (Dr.) Thomas Hahn</strong><br>Associate Professor, National Resilience Centre, Stockholm University</p>
+      </article>
+
+      <article class="session">
+        <div class="session-tag">ALAPPUZHA</div>
+        <h3>Positioning Alappuzha as India's Blue Economy Capital</h3>
+        <p><strong>Mr. Rupesh Kumar K.</strong><br>CEO, Kerala Responsible Tourism Mission Society (Responsible Tourism)</p>
+        <p><strong>Mr. Vinod V.</strong><br>President, All Kerala Houseboat Owners Association</p>
+        <p><strong>Mr. Venugopal G.</strong><br>President, All Kerala Houseboat Owners Federation — Emerging Houseboat Tourism in the Context of Blue Economy</p>
+      </article>
+
+      <article class="session workshop">
+        <div class="session-tag">WORKSHOP I</div>
+        <h3>New Gen Farming</h3>
+        <p><strong>Mr. S. P. Sujith Swaminikarthil</strong><br>Variety Farmer</p>
+      </article>
+
+      <article class="session workshop">
+        <div class="session-tag">WORKSHOP II</div>
+        <h3>Ayurveda Tourism</h3>
+        <p><strong>Sr. Dr. Anet Cinobey</strong><br>MD</p>
+      </article>
+
+      <article class="session">
+        <div class="session-tag">FOOD & COASTAL ECONOMIES</div>
+        <h3>From Ocean To Plate: Revitalising Indigenous Cuisines for Sustainable Coastal Economies</h3>
+        <p><strong>Mr. Sid Mehta</strong><br>Founder and CEO, Greenworks Inc., Canada</p>
+      </article>
+
+      <article class="session">
+        <div class="session-tag">OCEAN LITERACY</div>
+        <h3>Knowing our Ocean, Shaping our Future: Ocean Literacy as the Foundation of a Sustainable Blue Economy</h3>
+        <p><strong>Mr. Jackson Peter</strong><br>Founder & Managing Director, Cool Divers Pvt. Ltd.; Founder & Managing Director, Bond Ocean Safari; Founder & Managing Trustee, Planet Ocean Foundation</p>
+        <p><strong>Prof. (Dr.) Paulachan KJ Kaithottungal</strong><br>Principal and Executive Director, Naipunnya Institute of Management and Information Technology, Autonomous (NIMIT), Koratty, Thrissur</p>
+      </article>
+
+      <article class="session">
+        <div class="session-tag">VISION 2030</div>
+        <h3>Shaping Kerala's Blue Economy Vision 2030</h3>
+        <p><strong>Dr. Aswathy N.</strong><br>Principal Scientist, FRAEED, ICAR-CMFRI, Kochi</p>
+        <p><strong>Rev. Fr. Xavier Kudiyamserry</strong><br>Spokes Person, Diocese of Alleppey</p>
+        <p><strong>Mr. Mathew Joseph</strong><br>Co-Founder and COO, Fresh To Home</p>
+      </article>
+
+      <article class="session">
+        <div class="session-tag">FOOD SAFETY</div>
+        <h3>Sea of Deception; Food Safety & Fraud</h3>
+        <p><strong>Prof. Roy D. Palmer</strong><br>CEO, Seafood Consumers Association Ltd (ACNC), Australia</p>
+      </article>
+
+      <article class="session">
+        <div class="session-tag">MARINE INDUSTRIES</div>
+        <h3>Marine Industries & Blue Biotechnology</h3>
+        <p><strong>Dr. Radhika Rajasree S.R.</strong><br>Dean, Professor, Faculty of Ocean Science and Technology, KUFOS</p>
+        <p><strong>Dr. Abhilash Sasidharan</strong><br>Assistant Professor, Fish Processing Technology, KUFOS</p>
+      </article>
+
+      <article class="session">
+        <div class="session-tag">CLIMATE & CONSERVATION</div>
+        <h3>Climate Action, Conservation & Renewable Energy</h3>
+        <p><strong>Dr. Mohamed Hatha</strong><br>Emeritus Professor, Department of Marine Biology, Microbiology and Biochemistry, CUSAT; Fulbright Scholar; American Society of Microbiology (ASM) Country Ambassador, South India; Director, CUSAT-NCPOR Centre for Polar Sciences</p>
+      </article>
+
+      <article class="session">
+        <div class="session-tag">EDUCATION & DIGITAL BLUE ECONOMY</div>
+        <h3>Education, Skills, Communication & Digital Blue Economy</h3>
+        <p><strong>Prof. (Dr.) Girish Gopinath</strong><br>Professor & Head, Department of Remote Sensing and GIS, KUFOS</p>
+      </article>
+
+      <article class="session">
+        <div class="session-tag">COASTAL AGRICULTURE & CUISINE</div>
+        <h3>Coastal Agriculture & Blue Cuisine</h3>
+        <p><strong>Dr. Imelda Joseph</strong><br>Principal Scientist, Head Mariculture Division, ICAR-CMFRI, Kochi</p>
+        <p><strong>Dr. Safeena MP</strong><br>Associate Professor, Department of Aquatic Animal Health Management, Faculty of Fisheries Science, KUFOS</p>
+      </article>
+
+      <article class="session">
+        <div class="session-tag">FINANCE & POLICY</div>
+        <h3>Blue Finance & Emerging Policy Perspectives</h3>
+        <p><strong>Dr. Afsal E.M.</strong><br>Associate Professor, School of Management and Entrepreneurship, KUFOS</p>
+      </article>
+    </div>
   </div>
- </div>
 </section>
 
-<section id="speakers">
- <div class="container">
-  <div class="section-kicker">Speakers & Resource Persons</div><h2>Perspectives across sectors and geographies.</h2>
-  <div class="speakers">
-   <div class="speaker"><strong>Prof. (Dr.) Biju Kumar</strong><span>Vice Chancellor, Kerala University of Fisheries and Ocean Studies</span></div>
-   <div class="speaker"><strong>Prof. Achuthsankar S. Nair</strong><span>Chairperson, Kerala State Higher Education Council</span></div>
-   <div class="speaker"><strong>Dr. P. Shinoj</strong><span>Principal Scientist, FRAEED, ICAR-CMFRI, Kochi</span></div>
-   <div class="speaker"><strong>Dr. Jacob George C</strong><span>Senior Associate Director, Adi Shankara Group of Institutions & Visiting Professor, NIT Calicut</span></div>
-   <div class="speaker"><strong>Mr. Rupesh Kumar K.</strong><span>CEO, Kerala Responsible Tourism Mission Society</span></div>
-   <div class="speaker"><strong>Mr. Vinod V.</strong><span>President, All Kerala Houseboat Owners Association</span></div>
-   <div class="speaker"><strong>Mr. Venugopal G.</strong><span>President, All Kerala Houseboat Owners Federation</span></div>
-   <div class="speaker"><strong>HR Representative</strong><span>Ramada by Wyndham, Alappuzha</span></div>
-   <div class="speaker"><strong>Mr. S. P. Sujith Swaminikarthil</strong><span>Variety Farmer</span></div>
-   <div class="speaker"><strong>Sr. Dr. Anet Cinobey</strong><span>MD</span></div>
-   <div class="speaker"><strong>Prof. Roy D. Palmer</strong><span>CEO, Seafood Consumers Association Ltd. (ACNC), Australia</span></div>
-   <div class="speaker"><strong>Mr. Jackson Peter</strong><span>Founder & Managing Director, Cool Divers Pvt. Ltd.; Founder & Managing Director, Bond Ocean Safari; Founder & Managing Trustee, Planet Ocean Foundation</span></div>
-   <div class="speaker"><strong>Prof. (Dr.) Paulachan KJ Kaithottungal</strong><span>Principal and Executive Director, Naipunnya Institute of Management and Information Technology, Autonomous (NIMIT), Koratty, Thrissur</span></div>
-   <div class="speaker"><strong>Dr. Aswathy N.</strong><span>Principal Scientist, FRAEED, ICAR-CMFRI, Kochi</span></div>
-   <div class="speaker"><strong>Father Xavier Kudiyamserry</strong><span>Resource Person</span></div>
-   <div class="speaker"><strong>Mr. Mathew Joseph</strong><span>Co-Founder and COO, FreshToHome</span></div>
-   <div class="speaker"><strong>Mr. Mahadevan Pavithran</strong><span>Travancore Cocotuft Pvt. Ltd.</span></div>
-   <div class="speaker"><strong>Mr. Sid Mehta</strong><span>Founder and CEO, Greenworks Inc., Canada</span></div>
-   <div class="speaker"><strong>Prof. (Dr.) Thomas Hahn</strong><span>Associate Professor, National Resilience Centre, Stockholm University</span></div>
-  </div>
- </div>
-</section>
+
 
 <section id="papers">
  <div class="container">
   <div class="section-kicker">Call for Papers</div><h2>Bring your research to the dialogue.</h2>
   <p class="lead">Original and unpublished research papers, review papers, case studies, policy analyses and research posters are invited from academicians, researchers, policymakers, professionals and students.</p>
   <div class="cards">
-   <div class="card"><h3>Abstract Submission</h3><p>Maximum 300 words · 3–5 keywords.</p><p style="margin-top:14px"><a class="btn btn-primary" href="https://forms.gle/wMD5yfEYPbnH1HxK7" target="_blank" rel="noopener">Submit Abstract</a></p></div>
+   <div class="card"><h3>Abstract Submission</h3><p>Maximum 300 words · 3–5 keywords.</p><p style="margin-top:14px"><a class="btn btn-primary" href="https://forms.gle/wMD5yfEYPbnH1HxK7" target="_blank" rel="noopener">Submit Abstract</a></p></div><div class="card"><h3>Delegate Registration</h3><p>Register as a delegate, paper presenter or participant.</p><p style="margin-top:14px"><a class="btn btn-primary" href="https://forms.gle/6DnKHZ9uVB2PsEP88" target="_blank" rel="noopener">Register Now</a></p></div>
    <div class="card"><h3>Full Paper</h3><p>4,000–6,000 words · MS Word (.doc/.docx)</p></div>
    <div class="card"><h3>Referencing</h3><p>APA 7th Edition or relevant subject-specific style</p></div>
    <div class="card"><h3>Formatting</h3><p>Times New Roman · 12-point · 1.5 line spacing</p></div>
@@ -257,16 +358,62 @@ footer small{display:block;margin-top:25px;color:#78999d}
 </section>
 
 <section id="contact" class="contact">
- <div class="container contact-grid">
-  <div><div class="section-kicker">Venue & Contact</div><h2>Meet us in Cherthala.</h2><p class="lead"><strong>Naipunnya School of Management, Cherthala</strong><br>Near Manorama Junction<br>Cherthala, Alappuzha – 688524<br>Kerala, India</p><p><strong>Dates:</strong> 25–26 September 2026<br><strong>Mode:</strong> Hybrid – In-person & Online</p></div>
-  <div class="contact-box"><div class="section-kicker">Symposium Secretariat</div><h3>Vembanad Dialogues 2026</h3><p>Naipunnya School of Management<br>Near Manorama Junction<br>Cherthala, Alappuzha – 688524<br>Kerala, India</p><p><strong>General Enquiries</strong><br><a href="mailto:symposium@naipunnyacollege.ac.in">symposium@naipunnyacollege.ac.in</a></p><a class="btn btn-primary" href="mailto:symposium@naipunnyacollege.ac.in?subject=Vembanad%20Dialogues%202026%20Enquiry">Contact Secretariat</a></div>
- </div>
+  <div class="container contact-grid">
+    <div>
+      <div class="section-kicker">Venue & Contact</div>
+      <h2>Meet us in Cherthala.</h2>
+      <p class="lead"><strong>Naipunnya School of Management, Cherthala</strong><br>
+      Near Manorama Junction<br>
+      Cherthala, Alappuzha – 688524<br>
+      Kerala, India</p>
+      <p><strong>Dates:</strong> 25–26 September 2026<br>
+      <strong>Mode:</strong> Hybrid – In-person & Online</p>
+      <p><strong>Registration:</strong><br>
+      <a href="https://forms.gle/6DnKHZ9uVB2PsEP88" target="_blank" rel="noopener">Register for Vembanad Dialogues 2026</a></p>
+    </div>
+
+    <div class="contact-box">
+      <div class="section-kicker">Symposium Secretariat</div>
+      <h3>Vembanad Dialogues 2026</h3>
+
+      <div class="secretariat-person">
+        <strong>Rev. Fr. Dr. Benny John Maramparampil</strong>
+        <span>Executive Director & Principal</span>
+        <a href="mailto:principal@naipunnyacollege.ac.in">principal@naipunnyacollege.ac.in</a>
+        <a href="tel:+919447460124">+91-9447460124</a>
+      </div>
+
+      <div class="secretariat-person">
+        <strong>Dr. Ajai Krishnan G.</strong>
+        <span>Dean, Academics and Research</span>
+        <a href="mailto:dean@naipunnyacollege.ac.in">dean@naipunnyacollege.ac.in</a>
+        <a href="tel:+919645626109">+91-9645626109</a>
+      </div>
+
+      <div class="secretariat-person">
+        <strong>Dr. Junaid K.C.</strong>
+        <span>HoD, PGDTM</span>
+        <a href="mailto:drjunaid@naipunnyacollege.ac.in">drjunaid@naipunnyacollege.ac.in</a>
+        <a href="tel:+919498855994">+91-9498855994</a>
+      </div>
+
+      <div class="secretariat-person">
+        <strong>Dr. Anu G.S.</strong>
+        <span>Asst. Prof., PGDC</span>
+        <a href="mailto:dranugs@naipunnyacollege.ac.in">dranugs@naipunnyacollege.ac.in</a>
+        <a href="tel:+919633610640">+91-9633610640</a>
+      </div>
+
+      <a class="btn btn-primary" href="mailto:vembanad.dialogues@naipunnyacollege.ac.in?subject=Vembanad%20Dialogues%202026%20Enquiry">Email Secretariat</a>
+      <a class="btn btn-outline" href="https://forms.gle/6DnKHZ9uVB2PsEP88" target="_blank" rel="noopener" style="margin-top:10px">Register Now</a>
+    </div>
+  </div>
 </section>
 
 <footer>
  <div class="container footer-grid">
   <div><strong>Vembanad Dialogues 2026</strong><br>Global Symposium on Keralam’s Blue Economy</div>
-  <div>25–26 September 2026 · Cherthala, Kerala<br>Hybrid Mode · In-person & Online</div>
+  <div>25–26 September 2026 · Cherthala, Kerala<br>Hybrid Mode · In-person & Online<br><a href="mailto:vembanad.dialogues@naipunnyacollege.ac.in" style="color:#b8d6d7">vembanad.dialogues@naipunnyacollege.ac.in</a></div>
  </div>
  <div class="container"><small>From Research to Action. From Water to Opportunity. From Alappuzha to a Blue Future.</small></div>
 </footer>
